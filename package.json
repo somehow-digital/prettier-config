@@ -1,0 +1,6 @@
+{
+	"name": "@somehow-digital/prettier",
+	"description": "Shared `prettier` configurations for `somehow.digital` projects.",
+	"version": "0.0.0",
+	"license": "MIT"
+}
