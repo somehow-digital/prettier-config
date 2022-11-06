@@ -15,6 +15,9 @@
 		".": "./configuration/basic.cjs",
 		"./basic": "./configuration/basic.cjs"
 	},
+	"files": [
+		"./configuration/"
+	],
 	"peerDependencies": {
 		"prettier": "^2.6.0"
 	},
