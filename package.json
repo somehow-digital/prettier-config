@@ -1,6 +1,26 @@
 {
-	"name": "@somehow-digital/prettier",
+	"name": "@somehow-digital/prettier-config",
 	"description": "Shared `prettier` configurations for `somehow.digital` projects.",
 	"version": "0.0.0",
-	"license": "MIT"
+	"type": "module",
+	"license": "MIT",
+	"repository": "somehow-digital/prettier-config",
+	"scripts": {
+		"test": "ava",
+		"lint": "prettier --check .",
+		"format": "prettier --write .",
+		"prepare": "husky install"
+	},
+	"exports": {
+		".": "./configuration/basic.cjs",
+		"./basic": "./configuration/basic.cjs"
+	},
+	"peerDependencies": {
+		"prettier": "^2.6.0"
+	},
+	"devDependencies": {
+		"ava": "^5.0.1",
+		"husky": "^8.0.1",
+		"prettier": "2.7.1"
+	}
 }
