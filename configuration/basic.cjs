@@ -8,5 +8,5 @@ module.exports = {
 	bracketSameLine: true,
 	arrowParens: 'always',
 	htmlWhitespaceSensitivity: 'strict',
-	singleAttributePerLine: true,
+	singleAttributePerLine: false,
 };
