@@ -5,11 +5,18 @@
 	"type": "module",
 	"license": "MIT",
 	"repository": "somehow-digital/prettier-config",
+	"packageManager": "pnpm@9.1.0",
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=9"
+	},
 	"scripts": {
-		"test": "ava",
-		"lint": "prettier --check .",
-		"format": "prettier --write .",
-		"prepare": "husky install"
+		"lint": "pnpm run /^lint:.+/",
+		"lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
+		"lint:prettier": "prettier --check '**/*.{md,json,yml,yaml}'",
+		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files '**/*.*'",
+		"lint:knip": "knip --no-progress",
+		"prepare": "husky"
 	},
 	"exports": {
 		".": "./configuration/basic.js",
@@ -22,9 +29,12 @@
 		"prettier": "^3.0.3"
 	},
 	"devDependencies": {
-		"ava": "^5.3.1",
-		"husky": "^8.0.3",
-		"lint-staged": "^15.1.0",
-		"prettier": "3.0.3"
+		"@somehow-digital/eslint-config": "^2.0.0",
+		"cspell": "^8.8.0",
+		"eslint": "^9.2.0",
+		"husky": "^9.0.11",
+		"knip": "^5.13.0",
+		"lint-staged": "^15.2.2",
+		"prettier": "3.2.5"
 	}
 }

@@ -9,4 +9,5 @@ export default {
 	arrowParens: 'always',
 	htmlWhitespaceSensitivity: 'strict',
 	singleAttributePerLine: false,
+	jsxSingleQuote: false,
 };
