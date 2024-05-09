@@ -1,1 +1,5 @@
-export { default } from './configuration/basic.js';
+import config from './configuration/basic.js';
+
+export default {
+	...config,
+};
