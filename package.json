@@ -29,7 +29,7 @@
 		"prettier": "^3.0.3"
 	},
 	"devDependencies": {
-		"@somehow-digital/eslint-config": "^2.0.0",
+		"@somehow-digital/eslint-config": "github:somehow-digital/eslint-config",
 		"cspell": "^8.8.0",
 		"eslint": "^9.2.0",
 		"husky": "^9.0.11",
