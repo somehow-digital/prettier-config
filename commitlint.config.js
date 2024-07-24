@@ -1,7 +1,5 @@
-import plugin from './src/index.js';
-
 export default {
-	plugins: [plugin],
+	plugins: ['@somehow-digital/commitlint-plugin-spellcheck'],
 	rules: {
 		'spellcheck/body': [2, 'always'],
 		'spellcheck/footer': [2, 'always'],
