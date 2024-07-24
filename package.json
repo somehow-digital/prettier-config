@@ -11,12 +11,12 @@
 		"pnpm": ">=9"
 	},
 	"scripts": {
-		"lint": "pnpm run /^lint:.+/",
+		"prepare": "husky",
+		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
 		"lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
 		"lint:prettier": "prettier --check '**/*.{md,json,yml,yaml}'",
 		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files '**/*.*'",
-		"lint:knip": "knip --no-progress",
-		"prepare": "husky"
+		"lint:knip": "knip --no-progress"
 	},
 	"exports": {
 		".": "./configuration/basic.js",
@@ -30,6 +30,7 @@
 	},
 	"devDependencies": {
 		"@somehow-digital/eslint-config": "github:somehow-digital/eslint-config",
+		"concurrently": "^8.2.2",
 		"cspell": "^8.8.0",
 		"eslint": "^9.2.0",
 		"husky": "^9.0.11",
