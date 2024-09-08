@@ -37,7 +37,7 @@
 		"@somehow-digital/commitlint-plugin-spellcheck": "^1.0.1",
 		"@somehow-digital/cspell-dictionary": "^1.0.0",
 		"@somehow-digital/eslint-config": "github:somehow-digital/eslint-config",
-		"concurrently": "^8.2.2",
+		"concurrently": "^9.0.0",
 		"cspell": "^8.8.0",
 		"eslint": "^9.2.0",
 		"husky": "^9.0.11",
