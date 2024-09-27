@@ -11,15 +11,15 @@ importers:
       '@commitlint/cli':
         specifier: ^19.3.0
         version: 19.5.0(@types/node@22.5.4)(typescript@5.5.4)
-      '@somehow-digital/commitlint-plugin-spellcheck':
-        specifier: ^1.0.1
-        version: 1.0.1(cspell@8.14.4)
+      '@somehow-digital/commitlint-config':
+        specifier: ^1.0.0
+        version: 1.0.0(@commitlint/cli@19.5.0(@types/node@22.5.4)(typescript@5.5.4))(cspell@8.14.4)
       '@somehow-digital/cspell-dictionary':
         specifier: ^1.0.0
         version: 1.0.0(cspell@8.14.4)
       '@somehow-digital/eslint-config':
         specifier: github:somehow-digital/eslint-config
-        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/7a71f5951e904a1c957302a93bc7cd83da190e51(eslint@9.11.1(jiti@1.21.6))(prettier@3.3.3)(typescript@5.5.4)
+        version: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/59eba9ac1fd2e66589b5b39451d2fd58e99f5ccb(eslint@9.11.1(jiti@1.21.6))(prettier@3.3.3)(typescript@5.5.4)
       concurrently:
         specifier: ^9.0.0
         version: 9.0.1
@@ -494,6 +494,12 @@ packages:
     engines: {node: '>=8.10'}
     hasBin: true
 
+  '@somehow-digital/commitlint-config@1.0.0':
+    resolution: {integrity: sha512-rDqDGyHfE26k81a/DDrqQ2E+Pf4cdhTkcUbb0Emz/tE/PWIpSvgG4ENvRYlziuS72+9wHxMTbBcvvtMCmkWGDw==}
+    engines: {node: '>=20', pnpm: '>=9'}
+    peerDependencies:
+      '@commitlint/cli': ^19.5.0
+
   '@somehow-digital/commitlint-plugin-spellcheck@1.0.1':
     resolution: {integrity: sha512-r/P+xImxEEDIzIpO3mnFv3OMwsIM35pRTUPz0U7XiCxFg83ft8ldR6WsXaYUVGmuhqABee+vNmCqtfS0Q/DKfQ==}
     engines: {node: '>=20.3.0', pnpm: '>=9.0.0'}
@@ -506,8 +512,8 @@ packages:
     peerDependencies:
       cspell: ^8.13.0
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/7a71f5951e904a1c957302a93bc7cd83da190e51':
-    resolution: {tarball: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/7a71f5951e904a1c957302a93bc7cd83da190e51}
+  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/59eba9ac1fd2e66589b5b39451d2fd58e99f5ccb':
+    resolution: {tarball: https://codeload.github.com/somehow-digital/eslint-config/tar.gz/59eba9ac1fd2e66589b5b39451d2fd58e99f5ccb}
     version: 2.0.0
     engines: {node: '>=20', pnpm: '>=9'}
     peerDependencies:
@@ -2443,6 +2449,13 @@ snapshots:
       ignore: 5.3.2
       p-map: 4.0.0
 
+  '@somehow-digital/commitlint-config@1.0.0(@commitlint/cli@19.5.0(@types/node@22.5.4)(typescript@5.5.4))(cspell@8.14.4)':
+    dependencies:
+      '@commitlint/cli': 19.5.0(@types/node@22.5.4)(typescript@5.5.4)
+      '@somehow-digital/commitlint-plugin-spellcheck': 1.0.1(cspell@8.14.4)
+    transitivePeerDependencies:
+      - cspell
+
   '@somehow-digital/commitlint-plugin-spellcheck@1.0.1(cspell@8.14.4)':
     dependencies:
       cspell: 8.14.4
@@ -2453,7 +2466,7 @@ snapshots:
       '@cspell/dict-de-de': 4.0.0
       cspell: 8.14.4
 
-  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/7a71f5951e904a1c957302a93bc7cd83da190e51(eslint@9.11.1(jiti@1.21.6))(prettier@3.3.3)(typescript@5.5.4)':
+  '@somehow-digital/eslint-config@https://codeload.github.com/somehow-digital/eslint-config/tar.gz/59eba9ac1fd2e66589b5b39451d2fd58e99f5ccb(eslint@9.11.1(jiti@1.21.6))(prettier@3.3.3)(typescript@5.5.4)':
     dependencies:
       '@cspell/eslint-plugin': 8.12.1(eslint@9.11.1(jiti@1.21.6))
       '@eslint/js': 9.7.0
