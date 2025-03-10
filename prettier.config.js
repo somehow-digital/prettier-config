@@ -1,4 +1,4 @@
-import config from './configuration/basic.js';
+import config from '@somehow-digital/prettier-config';
 
 export default {
 	...config,
