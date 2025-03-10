@@ -4,7 +4,7 @@ export default {
 	bracketSpacing: true,
 	htmlWhitespaceSensitivity: 'strict',
 	jsxSingleQuote: false,
-	printWidth: 80,
+	printWidth: 120,
 	quoteProps: 'consistent',
 	semi: true,
 	singleAttributePerLine: false,
