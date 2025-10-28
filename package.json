@@ -2,7 +2,7 @@
 	"name": "@somehow-digital/prettier-config",
 	"type": "module",
 	"version": "2.0.0",
-	"packageManager": "pnpm@10.19.0",
+	"packageManager": "pnpm@10.20.0",
 	"description": "Shared `prettier` configurations for `somehow.digital` projects.",
 	"license": "MIT",
 	"repository": "somehow-digital/prettier-config",
